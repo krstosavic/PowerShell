@@ -27,7 +27,6 @@ Describe 'Grouping using Context' {
   }
   Context 'Test Group 4 - String tests' {
     $testValue = 'ArcaneCode'
-    # Test using a Like (not case senstive)
     It "Testing to see if $testValue has arcane" {
       $testValue | Should -BeLike "arcane*"
     }
@@ -47,4 +46,5 @@ Describe 'Grouping using Context' {
     }
   }
 }
+
 
